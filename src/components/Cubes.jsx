@@ -6,6 +6,7 @@ export const Cubes = () => {
   return cubes.map(({ id, pos, texture }) => (
     <Cube 
       key={id} 
+      id={id}
       position={pos} 
       texture={texture} 
       />

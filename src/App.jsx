@@ -5,6 +5,7 @@ import { Ground } from './components/Ground.jsx'
  import { FPV as Fpv } from './components/FPV.jsx'
  import { Player } from './components/Player.jsx'
 import { Cubes } from './components/Cubes.jsx'
+import { TextureSelector } from './components/TextureSelect.jsx'
 /*import { TextureSelector } from './components/TextureSelect.jsx' */
 
 function App () {
@@ -14,7 +15,6 @@ function App () {
         <Sky sunPosition={[50, 60, 20]} />
         <ambientLight intensity={0.5} />
          <Fpv /> 
-
 {/*  
 * # Lo que se coloque en Physics le sera afectado la fisica
 */}
@@ -27,6 +27,8 @@ function App () {
       </Canvas>
      <div className='pointer'>+</div> 
    {/*    <TextureSelector /> */}
+   <TextureSelector/>
+
     </>
   )
 }

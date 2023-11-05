@@ -19,11 +19,11 @@ const ACTIONS_KEYBOARD_MAP = {
   KeyA: "moveLeft",
   KeyD: "moveRight",
   Space: "jump",
-  Dig1: "dirt",
-  Dig1: "grass",
-  Dig1: "glass",
-  Dig1: "wood",
-  Dig1: "log",
+  Digit1: "dirt",
+  Digit2: "glass",
+  Digit3: "grass",
+  Digit4: "log",
+  Digit5: "wood",
 };
 
 export const useKeyboard = () => {
@@ -53,7 +53,7 @@ export const useKeyboard = () => {
           }
         ))
       }
-     //console.log(code)
+     console.log(code)
      }
      const handleKeyUp = event => {
       const {code} = event
