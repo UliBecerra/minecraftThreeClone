@@ -4,8 +4,8 @@ import { Physics } from '@react-three/cannon'
 import { Ground } from './components/Ground.jsx'
  import { FPV as Fpv } from './components/FPV.jsx'
  import { Player } from './components/Player.jsx'
-/*import { Cubes } from './components/Cubes.jsx'
-import { TextureSelector } from './components/TextureSelect.jsx' */
+import { Cubes } from './components/Cubes.jsx'
+/*import { TextureSelector } from './components/TextureSelect.jsx' */
 
 function App () {
   return (
@@ -19,13 +19,13 @@ function App () {
 * # Lo que se coloque en Physics le sera afectado la fisica
 */}
         <Physics>
-         {/*  <Cubes /> 
-         */}
+          <Cubes /> 
+         
           <Player />  
           <Ground />
         </Physics>
       </Canvas>
-      {/* <div className='pointer'>+</div> */}
+     <div className='pointer'>+</div> 
    {/*    <TextureSelector /> */}
     </>
   )

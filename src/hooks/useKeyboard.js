@@ -67,7 +67,7 @@ export const useKeyboard = () => {
           }
         ))
       }
-     console.log(code)
+    // console.log(code)
      }
     //Codigo para escuchar cuando una tecla es presionada y aactivar una funion
    document.addEventListener('keydown', handleKeyDown)

@@ -6,7 +6,7 @@ import { useKeyboard } from "../hooks/useKeyboard"
 
 const CHARACTER_SPEED = 5
 
-const CHARACTER_JUMP_FORCE = 10
+const CHARACTER_JUMP_FORCE = 4
 
 
 export const Player = () => {
@@ -81,7 +81,7 @@ jump} = useKeyboard()
       direction.z
     )
 
-    if(jump){
+    if(jump && Math.abs(vel.current[1]) < 0.1){
       api.velocity.set(
         vel.current[0],
         CHARACTER_JUMP_FORCE,
